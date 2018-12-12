@@ -1,0 +1,11 @@
+<div>
+<p class="name">Name is: {{user.name}}</p>
+<button (click)=toggle() *ngIf="togbutton"> Collapse</button>
+<button (click)=toggle() *ngIf="!togbutton">Generate</button>
+<div *ngIf="togbutton">
+  <p class="address">Address is {{user.address}}</p>
+  <p class="designation">Designation is {{user.designation}}</p>
+  <p *ngIf="user.phone.length>0" class="phone"></p>
+  <p *ngFor="let phonenumbers of user.phone" class="phonenumbers">{{phonenumbers}}</p>
+</div>
+</div>

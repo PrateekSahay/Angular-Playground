@@ -1,0 +1,8 @@
+Input Name:<input type="text" [(ngModel)]="username">
+<button (click)="showdetails()">DETAILS</button>
+<div *ngIf="response">
+  <p>Login:{{response.login}}</p>
+  <p>Repos:{{response.public_repos}}</p>
+  <p>Gists:{{response.public_gists}}</p>
+  <p>Followers:{{response.followers}}</p>
+</div>

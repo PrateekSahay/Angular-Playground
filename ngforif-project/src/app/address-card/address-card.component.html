@@ -1,0 +1,13 @@
+<p>{{User.Name}}</p>
+<p>{{User.Address}}</p>
+<p>{{User.Designation}}</p>
+<p *ngIf="User.Phone.length>0">Phone:</p>
+<p *ngFor="let phonenumbers of User.Phone">{{phonenumbers}}</p>
+
+
+<!--
+<p>{{User.Phone[0]}}</p>
+<p>{{User.Phone[1]}}</p>
+<p>{{User.Phone[2]}}</p>
+<p>{{User.Phone[3]}}</p>
+-->
